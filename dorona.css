@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 75px;
+    width: 100%;
+}
+
+.logo {
+    margin: 10px;
+    margin-left: 206px;
+    margin-top: 14px;
+}
+
+@media(max-width:600px) {
+    .flex-container {
+        display: flex;
+    }
+    .logo {
+        margin-left: 10px;
+        width: 10px;
+    }
+}
+
+.drop {
+    margin-right: 100px;
+    margin-top: 15px;
+}
+
+.form {
+    height: 40px;
+    width: 120px;
+    border: 3px solid purple;
+    border-radius: 10px;
+    font-size: 22px;
+    padding-left: 10px;
+    color: purple;
+}
+
+@media(max-width:600px) {
+    .drop {
+        margin-right: 20px;
+    }
+    .form {
+        font-size: 19px;
+        width: 70px;
+    }
+}
+
+.heading {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.well {
+    padding: 10px;
+    color: gray;
+}
+
+.start {
+    padding: 10px;
+}
+
+.dr {
+    padding: 5px;
+}
+
+.image {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.img {
+    width: 85px;
+    height: 100px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.sec {
+    align-content: center;
+    margin-left: 13em;
+    margin-top: 2em;
+    height: 14rem;
+    width: 66em;
+    border: 1px solid black;
+    box-shadow: 5px 7px 7px 5px rgba(0, 0, 0, 0.2), 5px 6px 6px 5px rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+}
+
+@media(max-width:600px) {
+    .sec {
+        margin-left: 3em;
+        width: 70%;
+    }
+}
+
+.box {
+    text-align: center;
+}
+
+.info {
+    display: flex;
+    flex: wrap;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.gender {
+    padding-left: 20px;
+    color: gray;
+    font-size: 17px;
+}
+
+.speciality {
+    padding-right: 20px;
+    color: gray;
+    font-size: 17px;
+}
+
+.male {
+    padding-left: 20px;
+    font-size: 17px;
+}
+
+.fdd {
+    padding-right: 20px;
+    font-size: 17px;
+}
+
+.button {
+    height: 46px;
+    width: 66em;
+    border: 1px solid #ffffff;
+    border-radius: 17px;
+    background-color: purple;
+    margin-left: 13em;
+    margin-top: 2em;
+}
+
+@media(max-width:600px) {
+    .button {
+        margin-left: 3em;
+        width: 70%;
+    }
+    .button p {
+        font-size: 10px;
+        font-style: normal;
+        font-family: monospace;
+    }
+}
+
+.button p {
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    padding: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.button:hover {
+    background-color: rgb(248, 183, 3);
+}
