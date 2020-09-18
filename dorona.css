@@ -92,6 +92,10 @@
 
 /*---box design----*/
 
+.section {
+    background-color: gainsboro;
+}
+
 .sec {
     align-content: center;
     margin-left: 13em;
@@ -150,7 +154,7 @@
     height: 46px;
     width: 73em;
     border: 1px solid #ffffff;
-    border-radius: 17px;
+    border-radius: 6px;
     background-color: purple;
     margin-left: 10em;
     margin-top: 2em;
