@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="data.css" rel="stylesheet" />
+
+</head>
+<script>
+    var list1 = [];
+    var list2 = [];
+    var list3 = [];
+
+    var n = 1;
+    var x = 0;
+
+
+    function AddRow() {
+
+        var AddRow = document.getElementById('show');
+        var Newrow = AddRow.insertRow(n);
+
+        list1[x] = document.getElementById('name').Value;
+        list2[x] = document.getElementById('age').Value;
+        list3[x] = document.getElementById('proffision').Value;
+
+        var cel1 = Newrow.insertCell(0);
+        var cel2 = Newrow.insertCell(1);
+        var cel3 = Newrow.insertCell(2);
+
+        cel1.innerHTML = list1(x);
+        cel2.innerHTML = list2(x);
+        cel3.innerHTML = list3(x);
+
+        n++;
+        x++;
+    }
+</script>
+
+<body>
+    <table border="3">
+        <tbody>
+            <tr>
+                <th>name</th>
+                <td><input type="text" name="name" id="name"></td>
+            </tr>
+            <tr>
+                <th>age</th>
+                <td><input type="text" name="age" id="age"></td>
+            </tr>
+            <tr>
+                <th>proffision</th>
+                <td><input type="text" name="profision" id="proffision"></td>
+            </tr>
+            <tr id="btna">
+                <td><input type="button" name="button" id="btn" value="Add" onclick="AddRow()"></td>
+            </tr>
+        </tbody>
+
+    </table>
+    <table border="3" id="show">
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>age</th>
+                <th>proffision</th>
+            </tr>
+
+        </thead>
+    </table>
+</body>
+
+</html>

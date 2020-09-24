@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 
@@ -10,7 +11,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
     height: 75px;
     width: 100%;
 }
@@ -64,17 +65,14 @@
     margin-top: 20px;
 }
 
-.well {
-    padding: 10px;
-    color: gray;
-}
+.well {}
 
 .start {
-    padding: 10px;
+    font-weight: 300;
 }
 
 .dr {
-    padding: 5px;
+    font-size: 26px;
 }
 
 .image {
@@ -83,28 +81,43 @@
 }
 
 .img {
-    width: 85px;
-    height: 100px;
     border: 1px solid white;
     border-radius: 50%;
+    max-width: 100px;
+    max-height: 100px;
+    min-width: 100px;
+    min-height: 100px;
+    position: relative;
+    top: 33px;
+    bottom: -50px;
+    display: block;
+    object-fit: contain;
+    -o-object-fit: contain;
+    object-position: top;
+    -o-object-position: top;
+    border: 1px solid #eeeeee;
+    margin: auto;
 }
 
 
 /*---box design----*/
 
-.section {
-    background-color: gainsboro;
+.color {
+    background-color: #f7f7f7;
+    padding: 70px 0;
+    z-index: 1;
 }
 
 .sec {
     align-content: center;
-    margin-left: 13em;
+    margin: auto;
     margin-top: 2em;
     height: 14rem;
     width: 66em;
-    border: 1px solid black;
-    box-shadow: 5px 7px 7px 5px rgba(0, 0, 0, 0.2), 5px 6px 6px 5px rgba(0, 0, 0, 0.19);
+    border: 1px solid rgba(0, 0, 0, .125);
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
     border-radius: 10px;
+    background-color: #ffffff;
 }
 
 @media(max-width:600px) {
@@ -152,11 +165,11 @@
 
 .button {
     height: 46px;
-    width: 73em;
+    width: 66em;
     border: 1px solid #ffffff;
     border-radius: 6px;
     background-color: purple;
-    margin-left: 10em;
+    margin: auto;
     margin-top: 2em;
 }
 
@@ -186,4 +199,30 @@
 
 .button a {
     text-decoration: none;
+}
+
+
+/*------bottom--*/
+
+footer {
+    background-color: white;
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.bottom {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #f7f7f7;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.clone a {
+    text-decoration: none;
+    color: purple;
+    font-weight: 700;
+    font-size: 19px;
 }

@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    margin-top: 50px;
+    text-align: center;
+    background: darkkhaki;
+    color: black;
+}
+
+#show th,
+#showtd {
+    padding: 15px;
+}
+
+#btna td input {
+    width: 100%;
+}
